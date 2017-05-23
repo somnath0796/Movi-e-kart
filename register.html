@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.jumbotron {
+            background-color:#341342 !important;
+            text-align: left;
+        }
+		.white-text {
+			font-family:"Verdana";
+			color:#ffffff;
+		}
+		.tab-content{
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+		.navbar-brand {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		.page-text {
+			background-color: #990000;
+			color:#ffffff;
+			font-family:"Trebuchet MS";
+			size: 22px;
+			border:1px;
+			margin=0px;
+		}
+        
+	</style>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<title>Mov-e-Kart :: Register</title></head>
+<body>
+	<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand pull-left" href="index.php" style="margin-right: 15px;">
+			  <img class="img-responsive" src="images/Moviekart Logo(xsml).png">
+			  </a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li><a href="index.php">Home</a></li>
+			  <li><a href="news.php">New Releases</a></li>
+			  <li><a href="purchases.php">Your Purchases</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="active"><a href="register.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+			  <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Guest</a></li>
+			</ul>
+		  </div>
+		</nav>
+	<div class=container>
+		
+		<div class="page-text">
+		<div class="page-header">
+			
+			<h1> &nbsp;<img src="images/popcorn(small).png"/>    Popcorns will be ready anytime now...  </h1>
+        </div></div>
+        
+        
+        <div class="row">	
+			<div class="image col-md-6">
+				<img class="img-responsive" src="images/Moviekart Logo.png">
+				<p align="left">Where Movies find you!</p>
+				<br><center><i>"If you let my daughter go now, that'll be the end of it.<br>I will not look for you, I will not pursue you. But if you don't,<br>I will look for you,I will find you, and I will kill you."</i></center>
+				<img class="img-responsive col-md-4" src="images/taken(big).png"/>
+			</div>
+			<div class="jumbotron col-md-6">
+				 <br>
+						<h4><p class= "white-text">Embark on your journey to Movies...</p></h4><br><br><br>
+					<form action="SignUp.php" name="register" onsubmit="return(validate() && validemail());" method="post">
+						<div class="row">
+							<b class="white-text col-md-6">First Name: </b><input class="col-md-6" type="text" name="FName" value=""><br><br>
+							<b class="white-text col-md-6">Last Name: </b><input class="col-md-6" type="text" name="LName" value=""><br><br>
+							<b class="white-text col-md-6">Email:</b>  <input class="col-md-6" type="email" name="email" value=""><br><br>
+							<b class="white-text col-md-6">Phone: </b><input class="col-md-6" type="text" name="phn" value=""><br><br>
+							<b class="white-text col-md-6">Billing Address (<i>1<sup>st</sup> Line</i>) : </b><input class="col-md-6" type="text" name="addr1" value=""><br><br>
+							<b class="white-text col-md-6">Billing Address (<i>2<sup>nd</sup> Line</i>) : </b><input class="col-md-6" type="text" name="addr2" value=""><br><br>
+							<b class="white-text col-md-6">City : </b><input class="col-md-6" type="text" name="city" value=""><br><br>
+							<b class="white-text col-md-6">Country : </b><input class="col-md-6" type="text" name="cntry" value=""><br><br>
+							<b class="white-text col-md-6">Username: </b><input class="col-md-6" type="text" name="UName" value=""><br><br>
+							<b class="white-text col-md-6">New Password: </b><input class="col-md-6" type="password" name="PWord" value=""><br><br>
+							<b class="white-text col-md-6">Confirm Password: </b><input class="col-md-6" type="password" name="CPWord" value=""><br><br>
+						</div>
+					   <center><p>&nbsp <button type="submit" class="btn btn-default btn-lg" role="Save Registration">Save all my details!</button></center>    
+						
+					</form> 
+			</div>
+			
+		</div>
+        
+        <script type="text/javascript" src="js/validate.js"></script>
+        <script type="text/javascript" src="js/validemail.js"></script>
+        
+		<br><br><br><br><br><br><br><br><br>
+        <footer>Best work is put on by Non-Web Developers &copy </footer>
+	</div>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
